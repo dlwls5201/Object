@@ -16,8 +16,8 @@
 
 > 결론적으로 이 책을 읽는 데 필요한 가장 중요한 준비물은 실무 프로그래밍 결합과 설계에 관해 고민한 시간이다.
 
-[예제코드-위키북스](https://wikibook.co.kr/object/)
-[예제코드-깃허브](https://github.com/eternity-oop/onject)
+[예제코드-위키북스](https://wikibook.co.kr/object/) </br>
+[예제코드-깃허브](https://github.com/eternity-oop/object)
 
 ## 들어가며 - 프로그래밍 패러다임
 
