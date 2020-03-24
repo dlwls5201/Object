@@ -5,4 +5,4 @@
 - [Chapter02 객체지향 프로그래밍](/src/readme/readme02.md)
 - [Chapter03 역활, 책임, 협력](/src/readme/readme03.md)
 
-<img src="http://image.yes24.com/goods/74219491/800x0" width="60%">
+<img src="http://image.yes24.com/goods/74219491/800x0" width="40%">
