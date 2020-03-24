@@ -1,5 +1,7 @@
 # 객체지향 프로그래
 
+
+
 ## 01 영화 예매 시스템
 
 ### 요구사항 살펴보기
@@ -38,7 +40,7 @@
 
 문제를 해결하기 위해 사용자가 프로그램을 사용하는 분야를 도메인이라고 부른다.
 
-![domain](./src/object/chapter02/image/domain.png)
+![domain](./object/chapter02/image/domain.png)
 
 ### 클래스 구현하기
 
@@ -76,7 +78,7 @@
 객체지향의 장점은 객체를 이용해 도메인의 의미를 풀부하게 표현할 수 있다는 것이다. 따라서 의미를 좀 더 명시적이고 분명하게 표현할 수 있다면 객체를 사용해서 해당 개념을 구현하라.
 그 개념이 비록 하나의 인스턴스 변수만 포함하더라도 개념을 명시적으로 표현하는 것은 전체적인 설계의 명확성과 유연성을 높이는 첫걸음이다.
 
-![collaboration](./src/object/chapter02/image/collaboration.png)
+![collaboration](./object/chapter02/image/collaboration.png)
 
 ### 협력에 관한 짧은 이야기
 
@@ -92,7 +94,7 @@
 
 부모 클래스에 기본적인 알고리즘의 흐름을 구현하고 중간에 필요한 처리를 자식 클래스에게 위임하는 디자인 패턴을 TEMPLATE METHOD 패턴이라고 부른다.
 
-![discountPolicy](./src/object/chapter02/image/discountPolicy.png)
+![discountPolicy](./object/chapter02/image/discountPolicy.png)
 
 ### 할인 정책 구성하기
 
