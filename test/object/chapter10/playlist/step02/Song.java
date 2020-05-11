@@ -1,4 +1,4 @@
-package object.chapter10.billing.step05.playlist.step01;
+package object.chapter10.playlist.step02;
 
 public class Song {
     private String singer;

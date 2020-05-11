@@ -1,6 +1,6 @@
-package object.chapter10.billing.step05;
+package object.chapter10;
 
-import object.chapter10.billing.step05.instrumented.InstrumentedHashSet;
+import object.chapter10.instrumented.InstrumentedHashSet;
 import org.junit.Test;
 
 import java.util.Arrays;

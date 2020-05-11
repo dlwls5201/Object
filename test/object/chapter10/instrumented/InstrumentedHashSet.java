@@ -1,4 +1,4 @@
-package object.chapter10.billing.step05.instrumented;
+package object.chapter10.instrumented;
 
 import java.util.Collection;
 import java.util.HashSet;

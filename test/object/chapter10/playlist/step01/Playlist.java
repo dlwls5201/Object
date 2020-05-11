@@ -1,4 +1,4 @@
-package object.chapter10.billing.step05.playlist.step01;
+package object.chapter10.playlist.step01;
 
 import java.util.ArrayList;
 import java.util.List;
