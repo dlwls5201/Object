@@ -12,6 +12,7 @@ public class NightlyDiscountPhone extends Phone {
     private Duration seconds;
 
     public NightlyDiscountPhone(Money nightlyAmount, Money regularAmount, Duration seconds, double taxRate) {
+        //super는 나쁘다.
         super(taxRate);
         this.nightlyAmount = nightlyAmount;
         this.regularAmount = regularAmount;

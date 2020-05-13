@@ -16,7 +16,7 @@ public class Phone {
         this.seconds = seconds;
     }
 
-    public void call(Call call) {
+    public void addCall(Call call) {
         calls.add(call);
     }
 

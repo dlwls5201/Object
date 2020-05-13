@@ -9,6 +9,7 @@ public class RegularPhone extends Phone {
     private Duration seconds;
 
     public RegularPhone(Money amount, Duration seconds, double taxRate) {
+        //super는 나쁘다.
         super(taxRate);
         this.amount = amount;
         this.seconds = seconds;

@@ -7,6 +7,8 @@ import java.util.Map;
 
 public class Playlist {
     private List<Song> tracks = new ArrayList<>();
+
+    //가수 별 노래의 제목 관리
     private Map<String, String> singers = new HashMap<>();
 
     public void append(Song song) {
