@@ -34,6 +34,7 @@ public class NightlyDiscountPhone {
             }
         }
 
+        //이건 실수 임을 나타내기 위해서 짠거겠지?
         return result.minus(result.times(taxRate));
     }
 }
