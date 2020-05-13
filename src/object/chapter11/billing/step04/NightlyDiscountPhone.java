@@ -8,9 +8,9 @@ import java.time.Duration;
 public class NightlyDiscountPhone extends Phone {
     private static final int LATE_NIGHT_HOUR = 22;
 
-    private Money nightlyAmount;
-    private Money regularAmount;
-    private Duration seconds;
+    private final Money nightlyAmount;
+    private final Money regularAmount;
+    private final Duration seconds;
 
     public NightlyDiscountPhone(Money nightlyAmount, Money regularAmount, Duration seconds) {
         this.nightlyAmount = nightlyAmount;
@@ -18,12 +18,10 @@ public class NightlyDiscountPhone extends Phone {
         this.seconds = seconds;
     }
 
+    //override protected 인지 확인하자
     @Override
     protected Money calculateCallFee(Call call) {
-        if (call.getFrom().getHour() >= LATE_NIGHT_HOUR) {
-            return nightlyAmount.times(call.getDuration().getSeconds() / seconds.getSeconds());
-        } else {
-            return regularAmount.times(call.getDuration().getSeconds() / seconds.getSeconds());
-        }
+        Money price = call.getFrom().getHour() >= LATE_NIGHT_HOUR ? nightlyAmount : regularAmount;
+        return price.times(call.getDuration().getSeconds() / seconds.getSeconds());
     }
 }
