@@ -9,7 +9,7 @@ public abstract class Phone {
     private double taxRate;
     private List<Call> calls = new ArrayList<>();
 
-    //super을 사용하면 좋지 않다.
+    //인자가 있는 생성자는 부모에서 사용하면 안된다.
     public Phone(double taxRate) {
         this.taxRate = taxRate;
     }
@@ -19,7 +19,6 @@ public abstract class Phone {
     // 1. 생성자 주입
     // 2. setter 주입
     // 3. 메서드 주입
-
     public void addCall(Call call) {
         this.calls.add(call);
     }
