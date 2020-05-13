@@ -8,7 +8,11 @@ import java.util.List;
 public abstract class Phone {
     private List<Call> calls = new ArrayList<>();
 
-    public Money calculateFee() {
+    public final void addCall(Call call) {
+        calls.add(call);
+    }
+
+    public final Money calculateFee() {
         Money result = Money.ZERO;
 
         for (Call call : calls) {

@@ -5,12 +5,11 @@ import object.chapter11.money.Money;
 
 import java.time.Duration;
 
-public class RateDiscountableAndTaxableNightlyDiscountPhone
-        extends RateDiscountableNightlyDiscountPhone {
+public class RateDiscountableAndTaxableNightlyDiscountPhone extends RateDiscountableNightlyDiscountPhone {
     private double taxRate;
 
-    public RateDiscountableAndTaxableNightlyDiscountPhone(Money nightlyAmount, Money regularAmount,
-                                                          Duration seconds, Money discountAmount, double taxRate) {
+    public RateDiscountableAndTaxableNightlyDiscountPhone(
+            Money nightlyAmount, Money regularAmount, Duration seconds, Money discountAmount, double taxRate) {
         super(nightlyAmount, regularAmount, seconds, discountAmount);
         this.taxRate = taxRate;
     }

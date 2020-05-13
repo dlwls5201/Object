@@ -34,5 +34,7 @@ public abstract class Phone {
         return result.plus(result.times(taxRate));
     }
 
+    //템플릿 메소드 패턴
+    //헐리우드 원칙 : 먼저 연락하지 마세요. 저희가 먼저 연락 드리겟습니다.
     protected abstract Money calculateCallFee(Call call);
 }

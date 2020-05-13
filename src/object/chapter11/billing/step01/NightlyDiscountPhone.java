@@ -19,10 +19,7 @@ public class NightlyDiscountPhone extends Phone {
 
     @Override
     protected Money calculateCallFee(Call call) {
-        if (call.getFrom().getHour() >= LATE_NIGHT_HOUR) {
-            return nightlyAmount.times(call.getDuration().getSeconds() / seconds.getSeconds());
-        } else {
-            return regularAmount.times(call.getDuration().getSeconds() / seconds.getSeconds());
-        }
+        Money price = call.getFrom().getHour() >= LATE_NIGHT_HOUR ? nightlyAmount : regularAmount;
+        return price.times(call.getDuration().getSeconds() / seconds.getSeconds());
     }
 }

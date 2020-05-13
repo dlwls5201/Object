@@ -19,10 +19,7 @@ public class NightlyDiscountPolicy extends BasicRatePolicy {
 
     @Override
     protected Money calculateCallFee(Call call) {
-        if (call.getFrom().getHour() >= LATE_NIGHT_HOUR) {
-            return nightlyAmount.times(call.getDuration().getSeconds() / seconds.getSeconds());
-        }
-
-        return regularAmount.times(call.getDuration().getSeconds() / seconds.getSeconds());
+        Money fee = call.getFrom().getHour() >= LATE_NIGHT_HOUR ? nightlyAmount : regularAmount;
+        return fee.times(call.getDuration().getSeconds() / seconds.getSeconds());
     }
 }
