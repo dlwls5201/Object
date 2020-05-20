@@ -23,6 +23,11 @@ System.out.println("temp1 : " + temp1);
 String temp2 = "1" + 1; //연결 연산자
 System.out.println("temp2 : " + temp2);
 
+String temp3 = 1 + 1 + "1"; //연결 연산자
+System.out.println("temp3 : " + temp3);
+
+String temp4 = 1 + "1" + 1; //연결 연산자
+        System.out.println("temp4 : " + temp4);
 //결과 : 테스트 코드
 ```
 
@@ -32,7 +37,7 @@ System.out.println("temp2 : " + temp2);
 
 #### 매개변수 다형성
 
-- 제네릭 프로그래밍과 관련이 높은데 클래스의 인스턴스 변수나 메서드의 매개변수 타입을 임의의 타입으로 선언한 수 사용하는 시점에 구체적인 타입으로 지정하는 방식을 가리킨다.
+- 제네릭 프로그래밍과 관련이 높은데 클래스의 인스턴스 변수나 메서드의 매개변수 타입을 임의의 타입으로 선언한 후 사용하는 시점에 구체적인 타입으로 지정하는 방식을 가리킨다.
 
 ```java
 public interface List<E> extends Collection<E> { ... }

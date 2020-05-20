@@ -4,12 +4,6 @@ import org.junit.Test;
 
 public class 내적동질성 {
 
-    @Test
-    public void 트() {
-        Worker worker = new HardWorker();
-        worker.print();
-    }
-
     class Worker implements Runnable {
         @Override
         public void run() {
@@ -26,5 +20,11 @@ public class 내적동질성 {
         public void run() {
             System.out.println("HardWorker");
         }
+    }
+
+    @Test
+    public void 테스트() {
+        Worker worker = new HardWorker();
+        worker.print();
     }
 }
